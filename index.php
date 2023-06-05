@@ -4,11 +4,12 @@
 
 <head>
     <link rel="stylesheet" href="styles/index.css">
-    <?php include_once "./includes/header.php" ?>
+    
     <?php
         $currentPage = "home";
         $path = "./pages/";
     ?>
+    <?php include_once "./includes/header.php" ?>
 </head>
 
 <body class='no-scroll'>
