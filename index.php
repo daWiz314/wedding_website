@@ -12,20 +12,24 @@
         <nav>
             <ul>
                 <a href="">
-                    <li class='logo'></li>
-                </a><a href="">
+                    <li><img src="/imgs/logo.png" alt="Logo containing letters H and R" class="logo"></li>
+                </a>
+                <a class="animation-underline" href="">
+                    <li class="up">Home</li>
+                </a>
+                <a class="animation-underline" href="">
                     <li class='up'>Invitation</li>
                 </a>
-                <a href="">
+                <a class="animation-underline" href="">
                     <li class='up'>RSVP</li>
                 </a>
-                <a href="">
+                <a class="animation-underline" href="">
                     <li class='up'>Registry</li>
                 </a>
-                <a href="">
+                <a class="animation-underline" href="">
                     <li class='up'>Our Story</li>
                 </a>
-                <a href="">
+                <a class="animation-underline" href="">
                     <li class='up'>Wedding Party</li>
                 </a>
             </ul>
