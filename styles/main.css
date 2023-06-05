@@ -25,6 +25,7 @@ nav {
     max-width: 100vw;
     height: 7vh;
     background-color: rgb(165, 145, 130);
+    margin-top: -15px;
 }
 
 nav > ul {
