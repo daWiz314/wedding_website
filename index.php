@@ -1,39 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="styles/main.css">
-<link rel="stylesheet" href="styles/index.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 <head>
-
+    <link rel="stylesheet" href="styles/index.css">
+    <?php include_once "./includes/header.php" ?>
+    <?php
+        $currentPage = "home";
+        $path = "./pages/";
+    ?>
 </head>
 
 <body class='no-scroll'>
-    <nav>
-        <ul>
-            <a href="">
-                <li><img src="/imgs/logo.png" alt="Logo containing letters H and R" class="logo"></li>
-            </a>
-            <a class="animation-underline" href="">
-                <li class="up">Home</li>
-            </a>
-            <a class="animation-underline" href="">
-                <li class='up'>Invitation</li>
-            </a>
-            <a class="animation-underline" href="">
-                <li class='up'>RSVP</li>
-            </a>
-            <a class="animation-underline" href="">
-                <li class='up'>Registry</li>
-            </a>
-            <a class="animation-underline" href="">
-                <li class='up'>Our Story</li>
-            </a>
-            <a class="animation-underline" href="">
-                <li class='up'>Wedding Party</li>
-            </a>
-        </ul>
-    </nav>
+    <?php include_once "./includes/nav.php" ?>
     <main>
         <div>
             <h1 class='up text-shadow'>Harry & Rebecca</h1>
