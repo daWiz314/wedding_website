@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+}
+
+main {
+    z-index: 2;
+    background-image: "imgs/us.png";
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main div {
+    margin: 75vh auto;
+    width: 100%;
+}
+
+div > * {
+    width: max-content;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 3px 3px 2px black;
+}
