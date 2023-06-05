@@ -1,22 +1,29 @@
 body {
-    height: 100vh;
+    margin: 0;
+    background-color: rgb(165, 145, 130);
 }
 
 main {
-    z-index: 2;
-    background-image: "imgs/us.png";
-    background-position: center;
+    margin-top: 50px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/imgs/us.jpg);
+    background-position: 25%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
-main div {
-    margin: 75vh auto;
+main > div {
+    margin: 0;
+    position: absolute;
+    top: 75%;
     width: 100%;
 }
 
-div > * {
+main > div > * {
     width: max-content;
     margin: 0 auto;
     color: white;
-    text-shadow: 3px 3px 2px black;
+    text-shadow: 4px 3px 3px black;
+    font-size: revert;
 }
