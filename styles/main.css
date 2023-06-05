@@ -27,6 +27,12 @@
     }
 }
 
+@media (min-width: 1000px) and (min-height:1300px) {
+    nav {
+        height: 9vh;
+    }
+}
+
 * {
     font-family: DivineBeauty;
     font-size: large;
