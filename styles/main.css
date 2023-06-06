@@ -23,6 +23,7 @@
         display: inline;
         box-shadow: 2px 5px 10px rgba(0,0,0,0.2), 2px 6px 20px rgba(0,0,0,0.19);
         border-radius: 5px;
+        margin-top: 0;
     }
 
     nav {
@@ -133,7 +134,7 @@ html {
 #logo_checkbox:checked ~ label > .logo{
     width: 50px;
     height: auto;
-    margin-left: 85vw;
+    margin-left: calc(100vw - 50px);
 }
 
 nav > ul {
