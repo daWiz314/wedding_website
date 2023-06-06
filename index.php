@@ -8,8 +8,8 @@
     <?php
         $currentPage = "home";
         $path = "./pages/";
+        include_once "./includes/header.php";
     ?>
-    <?php include_once "./includes/header.php" ?>
 </head>
 
 <body class='no-scroll'>
