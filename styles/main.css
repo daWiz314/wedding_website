@@ -24,6 +24,7 @@
         box-shadow: 2px 5px 10px rgba(0,0,0,0.2), 2px 6px 20px rgba(0,0,0,0.19);
         border-radius: 5px;
         margin-top: 0;
+        cursor: pointer;
     }
 
     nav {
@@ -45,7 +46,7 @@
     }
 
     nav > ul > li {
-        margin-top: 4px;
+        margin-bottom: 30px;
         width: max-content;
         opacity: 0;
         filter: blur(4px);
