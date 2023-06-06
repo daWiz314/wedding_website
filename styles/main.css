@@ -16,6 +16,8 @@
     }
 }
 
+
+/* For small screens and mobile devices */
 @media (max-width: 1000px) {
     .logo {
         background-color: rgb(165, 145, 130);
@@ -55,6 +57,7 @@
     
 }
 
+/* For bigger devices */
 @media (min-width: 1001px) {
     .logo {
         display: contents;
