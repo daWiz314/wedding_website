@@ -30,7 +30,6 @@
         position: absolute;
         border-radius: 100%;
         background-color: unset;
-        cursor: pointer;
     }
 
     nav > ul {
@@ -46,10 +45,11 @@
     }
 
     nav > ul > li {
-        margin-top: 3px;
+        margin-top: 4px;
         width: max-content;
         opacity: 0;
         filter: blur(4px);
+        cursor: pointer;
     }
     
 }
