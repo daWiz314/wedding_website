@@ -69,6 +69,7 @@
 
     nav > ul {
         display: inline-flex;
+        min-width: 90vw;
     }
 }
 
@@ -139,7 +140,7 @@ html {
 
 nav > ul {
     width: min-content;
-    /* min-width: 90vw; */
+    
     margin: 0px auto 0;
     padding: 0;
     flex-direction: row;
