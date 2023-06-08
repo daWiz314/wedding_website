@@ -22,31 +22,32 @@
         <div id="container">
             <article>
                 <form action="./confimation.php">
+                    <label class="up">Attending</label>
                     <fieldset required>
-                        <label for="attend_yes" class="up">Attending</label>
-                        <label for="attend_yes">Y</label>
-                        <input type="checkbox" name="attend_yes" id="a_yes">
-                        <label for="attend_no">N</label>
-                        <input type="checkbox" name="attend_no" id="a_no">
+                        <label class="first">Y</label>
+                        <label>N</label>
+                        <label class="check_box first" for="at_yes"></label>
+                        <label class="check_box" for="at_no"></label>
+                        <input type="checkbox" name="at_yes">
+                        <input type="checkbox" name="at_no">
                     </fieldset>
+                    <label class="up">Plus One </label>
                     <fieldset required>
-                        <label for="plusone_yes" class="up">Plus one</label>
-                        <input type="checkbox" name="plusone_yes" id="po_yes">
-                        <input type="checkbox" name="plusone_no" id="po_no">
+                        <label for="po_yes" class="first">Y</label>
+                        <label for="po_no">N</label>
+                        <label class="check_box first" for="po_yes"></label>
+                        <label class="check_box" for="po_no"></label>
+                        <input type="checkbox" name="po_yes">
+                        <input type="checkbox" name="po_no">
                     </fieldset>
-                    <label for="first_name" class="up">First Name <input type="text" name="first_name" id="first_name"></label>
-                    
-                    <label for="last_name" class="up">Last Name</label>
-                    <input type="text" name="last_name" id="last_name">
-                    <label for="plusone_first_name" class="up">Plus One First Name</label>
-                    <input type="text" name="plusone_first_name" id="po_first_name">
-                    <label for="plusone_last_name" class="up">Plus One Last Name</label>
-                    <input type="text" name="plusone_last_name" id="po_last_name">
+                    <label for="f_name" class="up">First Name</label>
+                    <input type="text" name="f_name">
+                    <label for="l_name" class="up">Last Name</label>
+                    <input type="text" name="l_name">
                     <label for="email" class="up">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="code" class="up">code that was included in invite</label>
-                    <input type="text" name="code" id="code">                   
-                    
+                    <input type="email" name="email">
+                    <label for="code" class="up">Code</label>
+                    <input type="text" name="code">
                     <input type="submit" value="SUBMIT">
                 </form>
             </article>
