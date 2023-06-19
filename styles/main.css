@@ -23,14 +23,13 @@
     }
 
     nav > ul {
-        position: absolute;
-        left: 35vw;
+        margin: 0 auto;
         background-color: rgb(165, 145, 130);
-        max-width: 30vw;
+        max-width: 80vw;
         box-shadow: 2px 5px 10px rgba(0,0,0,0.2), 2px 6px 20px rgba(0,0,0,0.19);
         border-radius: 5px;
-        transform: scale(inherit);
-        animation: menu-unfill 0.7s both;
+        scale: inherit;
+        animation: menu-unfill 0.7s;
     }
 
     nav > ul > li {
@@ -54,10 +53,11 @@
     
     #logo_checkbox:checked ~ ul {
         display: flex;
+        
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: scale(inherit);
+        scale: inherit;
         animation: menu-fill 0.2s 0.7s both;
     }
     
@@ -195,20 +195,21 @@ nav > ul li {
 
 @keyframes menu-fill {
     0% {
-        transform: scale(0);
+        scale: 0;
     }
     100% {
-        transform: scale(1);
+        visibility: visible;
+        scale: 1;
     }
 }
 
 @keyframes menu-unfill {
     0% {
-        
-        transform: scale(inherit);
+        visibility: inherit;
+        scale: inherit;
     }
     100% {
-        transform: scale(0);
+        scale: 0;
     }
 }
 
