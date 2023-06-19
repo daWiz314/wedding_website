@@ -20,6 +20,7 @@
         position: absolute;
         border-radius: 100%;
         background-color: unset;
+        z-index: 99;
     }
 
     nav > ul {
@@ -29,7 +30,10 @@
         box-shadow: 2px 5px 10px rgba(0,0,0,0.2), 2px 6px 20px rgba(0,0,0,0.19);
         border-radius: 5px;
         scale: inherit;
-        animation: menu-unfill 0.7s;
+    }
+
+    .add-animation-unfill {
+        animation: menu-unfill 0.7s forwards;
     }
 
     nav > ul > li {
@@ -53,7 +57,6 @@
     
     #logo_checkbox:checked ~ ul {
         display: flex;
-        
         flex-direction: column;
         justify-content: center;
         align-items: center;
