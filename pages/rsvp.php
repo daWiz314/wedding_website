@@ -25,20 +25,29 @@
                     <label class="up">Attending</label>
                     <fieldset required>
                         <label class="first">Y</label>
+                        <label for="at_yes" class="first">
+                            <input type="checkbox" name="at_no" id="at_yes">
+                            <div class="check_box"></div>
+                        </label>
                         <label>N</label>
-                        <label class="check_box first" for="at_yes"></label>
-                        <label class="check_box" for="at_no"></label>
-                        <input type="checkbox" name="at_yes">
-                        <input type="checkbox" name="at_no">
+                        <label for="at_no">
+                            <input type="checkbox" name="at_no" id="at_no">
+                            <div class="check_box"></div>
+                        </label>
+                        
                     </fieldset>
-                    <label class="up">Plus One </label>
+                    <label class="up">Plus One</label>
                     <fieldset required>
-                        <label for="po_yes" class="first">Y</label>
-                        <label for="po_no">N</label>
-                        <label class="check_box first" for="po_yes"></label>
-                        <label class="check_box" for="po_no"></label>
-                        <input type="checkbox" name="po_yes">
-                        <input type="checkbox" name="po_no">
+                        <label class="first">Y</label>
+                        <label for="po_yes" class="first">
+                            <input type="checkbox" name="po_yes" id="po_yes">
+                            <div class="check_box"></div>
+                        </label>
+                        <label>N</label>
+                        <label for="po_no">
+                            <input type="checkbox" name="po_no" id="po_no">
+                            <div class="check_box"></div>
+                        </label>
                     </fieldset>
                     <label for="f_name" class="up">First Name</label>
                     <input type="text" name="f_name">
