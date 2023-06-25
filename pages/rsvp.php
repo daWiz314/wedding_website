@@ -53,6 +53,10 @@
                     <input type="text" name="f_name">
                     <label for="l_name" class="up">Last Name</label>
                     <input type="text" name="l_name">
+                    <label for="po_f_name" class="up po">Plus One <br>First Name</label>
+                    <input type="text" name="po_f_name" class="po">
+                    <label for="po_l_name" class="up po">Plus One <br>Last Name</label>
+                    <input type="text" name="po_l_name" class="po">
                     <label for="email" class="up">Email</label>
                     <input type="email" name="email">
                     <label for="code" class="up">Code</label>
@@ -71,6 +75,7 @@
             </aside>
         </div>
     </main>
+    <script src="../scripts/rsvp.js"></script>
 </body>
 
 </html>
