@@ -62,7 +62,7 @@ aside {
 
 form {
     display: grid;
-    row-gap: 2vh;
+    row-gap: 30px;
     column-gap: 5vw;
 }
 
@@ -101,7 +101,8 @@ fieldset > label {
     height: 30px;
     margin: 0 20px;
     border-radius: 10px;
-    box-shadow: 2px 5px 10px rgba(0,0,0,0.2), 2px 6px 20px rgba(0,0,0,0.19);
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.2), 2px 3px 5px rgba(0,0,0,0.19);
+    transition: box-shadow 0.3s;
     
 }
 
@@ -125,6 +126,10 @@ fieldset > label {
 
 .check_box::before {
     transform: rotate(45deg);
+}
+
+.check_box:hover {
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.2), 2px 7px 10px rgba(0,0,0,0.19);
 }
 
 fieldset > label > input:checked ~ .check_box::before, fieldset > label > input:checked ~ .check_box::after {
@@ -154,10 +159,15 @@ input {
     outline: none;
     height: 5vh;
     box-shadow: 2px 5px 10px rgba(0,0,0,0.2), 2px 6px 20px rgba(0,0,0,0.19);
+    transition: box-shadow 0.3s;
 }
 
 input:focus {
-    box-shadow: 0px 10px 5px rgba(0,0,0,0.2), 2px 7px 10px rgba(0,0,0,0.19);
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.2), 10px 7px 10px rgba(0,0,0,0.19), -5px 7px 5px rgba(0,0,0,0.2);
+}
+
+input:hover {
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.2), 10px 7px 10px rgba(0,0,0,0.19), -5px 7px 5px rgba(0,0,0,0.2);
 }
 
 input[type="submit"] {
