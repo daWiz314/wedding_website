@@ -99,8 +99,9 @@ class GroupCheckboxes {
     }
 }
 
+// Test to make sure it compiles
 
-
+console.log("Hello world");
 
 // -------------------- All below this is old code ----------------------------
 function display_pos() {
@@ -121,7 +122,6 @@ function check_no() {
         display_pos();
     }
 }
-
 // Force 'unwrapping' because those elements WILL exist on default
 var po_yes:HTMLElement = document.getElementById("po_yes")!;
 var po_no:HTMLElement = document.getElementById("po_no")!;
