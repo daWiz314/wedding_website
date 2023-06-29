@@ -9,6 +9,7 @@
     include_once "../includes/header-deep.php";
     ?>
     <link rel="stylesheet" href="../styles/rsvp.css">
+    <script src="../scripts/rsvp.js"></script>
 </head>
 
 <body class="no-scroll">
