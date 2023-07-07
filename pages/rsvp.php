@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,7 +21,7 @@
         </div>
         <div id="container">
             <article>
-                <form action="./confimation.php">
+                <form action="./confimation.php" method="post">
                     <label class="up">Attending</label>
                     <fieldset required>
                         <label class="first">Y</label>
