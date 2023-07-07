@@ -140,33 +140,6 @@ let display_po = function (display: Boolean) {
 function test_check_boxes() {
     let attending = new GroupCheckboxes(new CheckboxPair("at_yes", "at_yes_cb"), new CheckboxPair("at_no", "at_no_cb"));
     let plus_one = new GroupCheckboxes(new CheckboxPair("po_yes", "po_yes_cb"), new CheckboxPair("po_no", "po_no_cb"));
-    attending.add_listener_to_pair(()=>void{}, display_po);
+    attending.add_listener_to_pair(()=>void{}, ()=>{});
     plus_one.add_listener_to_pair(display_po, display_po);
 }
-
-
-
-
-// -------------------- All below this is old code ----------------------------
-// function display_pos() {
-//     for (let obj in pos) {
-//         try {
-//            (pos[obj] as HTMLElement).style.display = "unset";
-//         }
-//         catch {
-//             break;
-//         }
-//     }
-// }
-
-// function check_no() {
-//     if ((po_no as HTMLInputElement).checked) {
-//         (po_yes as HTMLInputElement).checked = false;
-//     } else {
-//         display_pos();
-//     }
-// }
-// Force 'unwrapping' because those elements WILL exist on default
-// var po_yes:HTMLElement = document.getElementById("po_yes")!;
-// var po_no:HTMLElement = document.getElementById("po_no")!;
-// po_yes.addEventListener("onclick", function() {check_no()});
