@@ -21,7 +21,7 @@
         </div>
         <div id="container">
             <article>
-                <form action="./confimation.php" method="post">
+                <form action="./confirmation.php" method="post">
                     <label class="up">Attending</label>
                     <fieldset required>
                         <label class="first">Y</label>
