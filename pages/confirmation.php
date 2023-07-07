@@ -8,9 +8,9 @@
     ?>
 </head>
 <body class="no-scroll">
+    <?php include_once "../includes/nav.php"; ?>
     <main>
         
     </main>
-    
 </body>
 </html>
