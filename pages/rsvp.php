@@ -50,7 +50,7 @@
                         </label>
                     </fieldset>
                     <label for="f_name" class="up">First Name</label>
-                    <input type="text" name="f_name">
+                    <input type="text" name="f_name" required>
                     <label for="l_name" class="up">Last Name</label>
                     <input type="text" name="l_name">
                     <label for="po_f_name" class="up po">Plus One <br>First Name</label>
@@ -58,9 +58,9 @@
                     <label for="po_l_name" class="up po">Plus One <br>Last Name</label>
                     <input type="text" name="po_l_name" class="po">
                     <label for="email" class="up">Email</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" required>
                     <label for="code" class="up">Code</label>
-                    <input type="text" name="code">
+                    <input type="text" name="code" required>
                     <input type="submit" value="SUBMIT">
                 </form>
             </article>
