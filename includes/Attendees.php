@@ -2,7 +2,6 @@
 
     class Attendee {
         private $_data = [
-            'id' => 0, //ID for database
             'attending' => false, // Bool for attending
             'po' => false, // Bool for plus one
             'f_name' => "", // String for first name
@@ -13,8 +12,7 @@
             'code' => "spam", // Code so we can filter actual users and bots/spam
         ];
         
-        public function __construct(array $data, int $id) {
-            $this -> _data["id"] = $id;
+        public function __construct(array $data) {
             $data = $this -> _fix_data($data);
             $this -> _set_up_data($data);
         }
@@ -33,9 +31,6 @@
 
         private function _set_up_data(array $data) {
             foreach($this->_data as $key => $_) {
-                if ($key == 'id') {
-                    continue;
-                }
                 $this->_data[$key] = $data[$key];
             }
             unset($data);
