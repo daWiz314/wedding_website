@@ -33,6 +33,14 @@
             foreach($this->_data as $key => $_) {
                 $this->_data[$key] = $data[$key];
             }
+            if ($data['at_yes']) {
+                $this->_data['attending'] = true;
+            }
+
+            if ($data['po_yes']) {
+                $this->_data['po'] = true;
+            }
+
             unset($data);
             unset($_POST);
         }
@@ -47,6 +55,26 @@
                 $return_this[$key] = $value;
             }
             return $return_this;
+        }
+
+        public function get_full_name() {
+            return $this->_data['f_name'] . " " . $this->_data['l_name'];
+        }
+
+        public function is_attending() {
+            return (string)$this->_data['attending'];
+        }
+
+        public function has_po() {
+            return (string)$this->_data['po'];
+        }
+
+        public function get_email() {
+            return $this->_data['email'];
+        }
+
+        public function get_po_name() {
+            return $this->_data['po_f_name'] . " " . $this->_data['po_l_name'];
         }
     }
     
