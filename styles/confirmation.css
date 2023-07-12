@@ -18,6 +18,7 @@ main > span {
 
 main > div {
     color: rgb(165, 145, 130);
+    margin-bottom: 2vh;
 }
 
 div:first-of-type {
@@ -26,6 +27,7 @@ div:first-of-type {
 
 h2 {
     font-size: 30px;
+    margin: 0;
 }
 
 h3 {
