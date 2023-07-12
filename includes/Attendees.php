@@ -57,16 +57,32 @@
             return $return_this;
         }
 
-        public function get_full_name() {
-            return $this->_data['f_name'] . " " . $this->_data['l_name'];
-        }
-
         public function is_attending() {
-            return (string)$this->_data['attending'];
+            return $this->_data['attending'];
         }
 
         public function has_po() {
-            return (string)$this->_data['po'];
+            return $this->_data['po'];
+        }
+
+        public function is_attending_string() {
+            if ($this->_data['attending']) {
+                return "Yes";
+            } else {
+                return "No";
+            }
+        }
+
+        public function has_po_string() {
+            if ($this->_data['po']) {
+                return "Yes";
+            } else {
+                return "No";
+            }
+        }
+
+        public function get_full_name() {
+            return $this->_data['f_name'] . " " . $this->_data['l_name'];
         }
 
         public function get_email() {
