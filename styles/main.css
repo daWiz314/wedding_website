@@ -193,7 +193,7 @@ nav > ul li {
 
 .up {
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 @keyframes menu-fill {
