@@ -17,16 +17,16 @@
         </div>
         <span></span>
         <div id="user_info_container">
-            <h3 class="up">Information submitted for: </h3>
-            <p id="attending">Attending?</p>
-            <p id="name">Name:</p>
-            <p id="email">Email:</p>
-            <p id="plus_one">Plus One?</p>
-            <p id="plus_one_name">Plus One Name:</p>
+            <h3 class="up">Information submitted for: <?php echo $user->get_full_name() ?> </h3>
+            <p>Attending? <?php echo $user->is_attending() ?></p>
+            <p>Name: <?php echo $user->get_full_name() ?></p>
+            <p>Email: <?php echo $user->get_email() ?></p>
+            <p>Plus One? <?php echo $user->has_po() ?></p>
+            <p>Plus One Name: <?php echo $user->get_po_name() ?></p>
         </div>
         <span></span>
         <div>
-            <h3 id="email_sent">An email has been sent to </h3>
+            <h3 id="email_sent">An email has been sent to <em><?php echo $user->get_email(); ?></em></h3>
         </div>
     </main>
 </body>
