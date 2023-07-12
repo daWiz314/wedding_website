@@ -18,15 +18,18 @@
         <span></span>
         <div id="user_info_container">
             <h3 class="up">Information submitted for: <?php echo $user->get_full_name() ?> </h3>
-            <p>Attending? <?php echo $user->is_attending() ?></p>
+            <p>Attending? <?php echo $user->is_attending_string() ?></p>
             <p>Name: <?php echo $user->get_full_name() ?></p>
             <p>Email: <?php echo $user->get_email() ?></p>
-            <p>Plus One? <?php echo $user->has_po() ?></p>
+            <p>Plus One? <?php echo $user->has_po_string() ?></p>
             <p>Plus One Name: <?php echo $user->get_po_name() ?></p>
         </div>
         <span></span>
         <div>
-            <h3 id="email_sent">An email has been sent to <em><?php echo $user->get_email(); ?></em></h3>
+            <?php if ($user->is_attending()){
+                echo '<h3 id="email_sent">An email has been sent to <em>' . $user->get_email() . '</em></h3>';
+            }   ?>
+            
         </div>
     </main>
 </body>
