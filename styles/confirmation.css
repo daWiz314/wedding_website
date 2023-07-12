@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+body > main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+main > span {
+    background-color: rgb(165, 145, 130);
+    width: 200%;
+    height: 1px;
+}
+
+main > div {
+    color: rgb(165, 145, 130);
+}
+
+div:first-of-type {
+    margin-top: 14vh;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
