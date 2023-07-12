@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include_once "../includes/confirmation_helper.php" ?>
     <?php 
     $currentPage = "confirm";
     $path = "./";
