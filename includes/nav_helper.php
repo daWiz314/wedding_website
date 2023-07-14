@@ -11,7 +11,6 @@
         "rsvp" => $path . "rsvp.php",
         "registry" => $path . "registry.php",
         "our story" => $path . "our_story.php",
-        "wedding party" => $path . "wedding_party.php",
     ];
 
     function echoLiElement($name, $url) {
