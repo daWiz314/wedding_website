@@ -196,6 +196,96 @@ nav > ul li {
     letter-spacing: 2px;
 }
 
+
+.check_box {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgb(165, 145, 130);
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.2), 2px 3px 5px rgba(0,0,0,0.19);
+    transition: box-shadow 0.3s;
+}
+
+.check_box::before, .check_box::after {
+    position: relative;
+    display: block;
+    top: 13px;
+    right: 2px;
+    width: 35px;
+    height: 2px;
+    border-radius: 100%;
+    content: "";
+    background-color: white;
+    visibility: hidden;
+}
+
+.check_box::after {
+    transform: rotate(-47deg);
+    top: 12px;
+}
+
+.check_box::before {
+    transform: rotate(45deg);
+}
+
+.check_box:hover {
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.2), 2px 7px 10px rgba(0,0,0,0.19);
+}
+
+fieldset > label > input:checked ~ .check_box::before, fieldset > label > input:checked ~ .check_box::after {
+    visibility: visible;
+}
+
+.first {
+    grid-column: 1;
+}
+
+.po {
+    display: none;
+}
+
+label {
+    grid-column: 1;
+    width: 10vw;
+}
+
+input {
+    grid-column: 2;
+    border-radius: 10px;
+    background-color:rgb(165, 145, 130);
+    border: 0;
+    color: white;
+    border:0px solid rgb(165, 145, 130);
+    outline: none;
+    height: 5vh;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.2), 2px 6px 20px rgba(0,0,0,0.19);
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+input:focus {
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.2), 10px 7px 10px rgba(0,0,0,0.19), -5px 7px 5px rgba(0,0,0,0.2);
+}
+
+input:hover {
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.2), 10px 7px 10px rgba(0,0,0,0.19), -5px 7px 5px rgba(0,0,0,0.2);
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    height:max-content;
+    width: max-content;
+    grid-column: 2;
+    text-align: center;
+    color: white;
+}
+
+
+
+
 @keyframes menu-fill {
     0% {
         scale: 0;
