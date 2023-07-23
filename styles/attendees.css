@@ -3,6 +3,7 @@ body {
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,6 +29,26 @@ main > div > span {
     display: block;
 }
 
+table {
+    width: 75%;
+    padding-bottom: 10px;
+    text-align: center;
+    overflow: scroll;
+}
+
+td {
+    padding: 10px;
+    overflow:scroll;
+}
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+::-webkit-scrollbar-track {
+    visibility: hidden;
+}
+
 .form {
     margin: 15px;
 }
@@ -49,4 +70,18 @@ main > div > span {
     grid-column: 1;
     grid-row: 2;
     cursor: pointer;
+}
+
+#fade_away {
+    animation: fade-out 2s forwards;
+}
+
+@keyframes fade-out {
+    50% {
+        scale: 1;
+    }
+    100% {
+        scale: 0;
+        margin: 0;
+    }
 }
