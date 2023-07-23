@@ -94,6 +94,10 @@
         public function get_po_name() {
             return $this->_data['po_f_name'] . " " . $this->_data['po_l_name'];
         }
+
+        public function get_code() {
+            return $this->_data['code'];
+        }
     }
     
 ?>
