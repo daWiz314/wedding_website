@@ -33,14 +33,16 @@
             foreach($this->_data as $key => $_) {
                 $this->_data[$key] = $data[$key];
             }
-            if ($data['at_yes']) {
-                $this->_data['attending'] = true;
+            if (array_key_exists('at_yes', $data)) {
+                if ($data['at_yes']) {
+                    $this->_data['attending'] = true;
+                }
             }
-
-            if ($data['po_yes']) {
-                $this->_data['po'] = true;
+            if (array_key_exists('po_yes', $data)) {
+                if ($data['po_yes']) {
+                    $this->_data['po'] = true;
+                }
             }
-
             unset($data);
             unset($_POST);
         }
