@@ -34,7 +34,7 @@
         // ----------Done----------------------------------
         // Ideally Attendees with plus ones will all be grouped together at the bottom
         // ----------Done----------------------------------
-        $pdo = set_up(); // Set up connection to database
+        $pdo = set_up_user(); // Set up connection to database
 
         $statement = $pdo->query("SELECT un from users"); // Grab the log in info
         $results = $statement->fetchAll();
@@ -81,7 +81,7 @@
     }
 
     function print_data() {
-        $pdo = set_up();
+        $pdo = set_up_attendees();
         $statement = $pdo->query("SELECT * from attendees");
         $statement->setFetchMode(PDO::FETCH_ASSOC);
         echo "<table>"; // HTML
