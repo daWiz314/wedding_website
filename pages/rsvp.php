@@ -65,6 +65,7 @@
                 </form>
             </article>
             <aside>
+                <p>For families RSVPing, just put how many in the plus one section!</p>
                 <p>Saturday, October 28th, 2023</p>
                 <p>Address will be included in confimation email</p>
                 <p>Ceremony: 4PM-4:30PM
