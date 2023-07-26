@@ -11,7 +11,7 @@
     <script src="../scripts/rsvp.js"></script>
 </head>
 
-<body class="no-scroll" onload="test_check_boxes()">
+<body onload="test_check_boxes()">
     <?php include_once "../includes/nav.php"; ?>
     <main>
         <div>
