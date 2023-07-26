@@ -6,6 +6,7 @@
             $path = "./";
             include_once "../includes/header-deep.php";
         ?>
+        <link rel="stylesheet" href="../styles/our_story.css">
     </head>
     <body>
         <?php include_once "../includes/nav.php"; ?>
