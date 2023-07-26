@@ -1,6 +1,7 @@
 @media (max-width: 1000px) {
     html {
         overflow: hidden;
+        padding-bottom: 30px;
     }
     
     body {
@@ -11,7 +12,8 @@
     }
 
     main {
-        margin-top: 20px;
+        /* margin-top: 20px; */
+        margin-top: 15vh;
         overflow: visible;
         height: 100vh;
     }
@@ -28,13 +30,14 @@
 
     article {
         width: 90vw;
+        padding-bottom: 20vh;
     }
 
 }
 
 @media (max-height: 700px) {
     main {
-        margin-top: 25vh;
+        margin-top: 30vh;
     }
 }
 
