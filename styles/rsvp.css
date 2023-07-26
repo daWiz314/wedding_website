@@ -93,6 +93,10 @@ main {
     flex-direction: column;
 }
 
+p {
+    text-align: center;
+}
+
 main > div:first-of-type {
     position: relative;
     margin-top: 20vh;
