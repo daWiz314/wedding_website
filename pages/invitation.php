@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../styles/invitation.css">
 </head>
 
-<body class="no-scroll">
+<body>
     <?php include_once "../includes/nav.php"; ?>
     <main>
         <div>
