@@ -1,3 +1,6 @@
+html {
+    overflow-y: visible;
+}
 body {
     margin: 0;
     background-color: rgb(165, 145, 130);
@@ -14,7 +17,7 @@ main {
     justify-content: space-around;
 }
 
-main>div {
+main > div {
     position: absolute;
     top: 25%;
     width: max-content;
@@ -30,7 +33,7 @@ main > div > * {
 
 main > div > span {
     border-top: 1px solid rgb(165, 145, 130);
-    width: 200%;
+    width: 100%;
 }
 
 main > div > h1 {
@@ -39,4 +42,13 @@ main > div > h1 {
 
 main > div > h3 {
     font-size: 24px;
+}
+
+figure:first-of-type {
+    margin: 10vh 0;
+}
+
+figure > img {
+    width: 50vw;
+    height: auto;
 }
