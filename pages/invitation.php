@@ -18,9 +18,14 @@
                 Invitation
             </h1>
             <span></span>
-            <h3 class="up">
-                Click to open!
-            </h3>
+            <figure>
+                <img src="../imgs/Invitation Front - Website.png" alt="Front of the invitation for the Wedding">
+                <figcaption class="up">Front of invitation</figcaption>
+            </figure>
+            <figure>
+                <img src="../imgs/Invitation Back - Website.png" alt="Back of the invitation for the Wedding">
+                <figcaption class="up">Back of invitation</figcaption>
+            </figure>
         </div>
     </main>
 </body>
