@@ -1,3 +1,35 @@
 body {
     margin: 0;
 }
+
+body > div {
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    width: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main > div{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: rgb(165, 145, 130);
+    font-size: 30px;
+}
+
+p {
+    color: rgb(165, 145, 130);
+}
