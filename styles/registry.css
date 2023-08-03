@@ -1,3 +1,42 @@
 body {
     margin: 0;
 }
+
+main > * {
+    color: rgb(165, 145, 130);
+    text-align: center;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+main > div > h1 {
+    margin-top: 5vh;
+    font-size: 30px;
+}
+
+main > div > span {
+    align-self: center;
+    width: 35vw;
+    height: 1px;
+    background-color: rgb(165, 145, 130);
+    margin-bottom: 5vh;
+}
+
+main > div > p {
+    text-align: center;
+    width: 30vw;
+    margin: 10px auto;
+    padding: 0;
+}
+
+main > div > a {
+    text-decoration: none;
+    color: rgb(165, 145, 130);
+    margin: 0;
+    padding: 0;
+}
