@@ -19,11 +19,11 @@
             </h1>
             <span></span>
             <figure>
-                <img src="../imgs/Invitation Front - Website.png" alt="Front of the invitation for the Wedding">
+                <img src="../imgs/Invitation Front - Website.webp" alt="Front of the invitation for the Wedding">
                 <figcaption class="up">Front of invitation</figcaption>
             </figure>
             <figure>
-                <img src="../imgs/Invitation Back - Website.png" alt="Back of the invitation for the Wedding">
+                <img src="../imgs/Invitation Back - Website.webp" alt="Back of the invitation for the Wedding">
                 <figcaption class="up">Back of invitation</figcaption>
             </figure>
         </div>

@@ -1,7 +1,7 @@
 <nav id="nav">
     <input type="checkbox" name="logo_checkbox" id="logo_checkbox">
     <label for="logo_checkbox">
-        <img src="/imgs/logo.png" alt="Logo containing letters H and R" class="logo" id="logo_img">
+        <img src="/imgs/logo.webp" alt="Logo containing letters H and R" class="logo" id="logo_img">
     </label>
     <ul id="nav_list">
     <script>
